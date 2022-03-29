@@ -109,6 +109,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# Project exclude paths
+/venv/
+.idea/
+
 
 # Spyder project settings
 .spyderproject
