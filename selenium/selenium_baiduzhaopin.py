@@ -25,6 +25,7 @@ def start(cityName):
     input_search = client.find_element(by=By.CSS_SELECTOR, value='input[name="query"]')
     input_search.send_keys("python")
     # 向左滚动
+    time.sleep(20)
     client.execute_script("var q=document.documentElement.scrollLeft=5000")
     # 点击搜索
     client.find_element(by=By.CSS_SELECTOR, value=".search-btn>i").click()
